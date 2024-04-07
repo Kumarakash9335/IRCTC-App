@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4df215c-4038-4a5c-b63e-17c8080b5fcd" name="Changes" comment="" />
+    <list default="true" id="e4df215c-4038-4a5c-b63e-17c8080b5fcd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +20,26 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "aj00568237"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="04330185-92d8-4499-9b0d-4a24ba6e4e04" />
+        <option name="url" value="https://github.com/aj00568237/IRCTCAppAutomation.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 2
@@ -26,18 +49,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AppTest.executor": "Run",
-    "Application.JDBConnection.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.BaseTest.executor": "Run",
-    "TestNG.BaseTest.startAppium.executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/home/sc-234-user/IdeaProjects/LaunchChromeIssue/src/test/java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AppTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JDBConnection.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.BaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BaseTest.startAppium.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;search__train&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/sc-234-user/IdeaProjects/LaunchChromeIssue/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/sc-234-user/IdeaProjects/IRCTCApp&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.BaseTest.startAppium">
     <configuration name="AppTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.AppTest" />
