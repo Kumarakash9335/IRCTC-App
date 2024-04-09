@@ -4,6 +4,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 import io.appium.java_client.service.local.AppiumServiceBuilder;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
@@ -17,7 +18,7 @@ public class BaseTest {
     public AppiumDriverLocalService service;
     public UiAutomator2Options options;
 
-@Test
+@BeforeSuite
     public void startAppium() throws MalformedURLException, InterruptedException {
 //        String npmPath = "/usr/local/lib/node_modules/appium/build/lib/main.js";
 //        service = new AppiumServiceBuilder().withAppiumJS(new File(npmPath)).withIPAddress("127.0.0.1").usingPort(4723).build();  // Start appium server through program
@@ -30,7 +31,7 @@ public class BaseTest {
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
     }
-
+    @AfterTest
     public void tearDownAppium (){
         if (driver!= null){
             driver.quit();

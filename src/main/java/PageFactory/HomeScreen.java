@@ -19,7 +19,7 @@ public class HomeScreen {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
 
-    @AndroidFindBy(id = "cris.org.in.prs.ima:id/tv_title_name")
+    @AndroidFindBy(xpath = "(//android.widget.TextView)[@text= 'IRCTC RAIL CONNECT']")
     private WebElement homeScreenText;
     @AndroidFindBy(xpath = "(//android.widget.TextView)[@text= 'Train']")
     private WebElement trainTab;

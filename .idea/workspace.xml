@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4df215c-4038-4a5c-b63e-17c8080b5fcd" name="Changes" comment="" />
+    <list default="true" id="e4df215c-4038-4a5c-b63e-17c8080b5fcd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/DataFiles/TestData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageFactory/TestClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/JsonConfigKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/JsonUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageFactory/SearchTrainListTestCases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageFactory/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageFactory/HomeScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PageFactory/TrainServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageFactory/TrainServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageFactory/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageFactory/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageFactory/SearchTrainList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/BaseTest.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,25 +57,31 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2U3u5EtLp6rZwglOGws51CYblTd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.AppTest.executor": "Run",
     "Application.JDBConnection.executor": "Run",
+    "Application.TestClass.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG./home/sc-234-user/IdeaProjects/IRCTC-App/testng.xml.executor": "Run",
     "TestNG.BaseTest.executor": "Run",
     "TestNG.BaseTest.startAppium.executor": "Run",
     "git-widget-placeholder": "search__train",
     "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/home/sc-234-user/IdeaProjects/LaunchChromeIssue/src/test/java",
+    "last_directory_selection": "/home/sc-234-user/IdeaProjects/IRCTC-App/src/test/java",
     "last_opened_file_path": "/home/sc-234-user/IdeaProjects/IRCTC-App"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.BaseTest.startAppium">
+  <component name="RunManager" selected="TestNG./home/sc-234-user/IdeaProjects/IRCTC-App/testng.xml">
     <configuration name="AppTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.AppTest" />
       <module name="Selenium" />
@@ -74,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JDBConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.JDBConnection" />
+    <configuration name="TestClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PageFactory.TestClass" />
       <module name="Selenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.*" />
+          <option name="PATTERN" value="PageFactory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,12 +143,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/home/sc-234-user/IdeaProjects/IRCTC-App/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG./home/sc-234-user/IdeaProjects/IRCTC-App/testng.xml" />
+        <item itemvalue="Application.TestClass" />
         <item itemvalue="TestNG.BaseTest.startAppium" />
         <item itemvalue="TestNG.BaseTest" />
         <item itemvalue="Application.AppTest" />
-        <item itemvalue="Application.JDBConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -141,5 +173,8 @@
       <updated>1692180402400</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

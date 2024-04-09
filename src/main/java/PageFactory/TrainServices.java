@@ -3,19 +3,24 @@ package PageFactory;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class TrainServices {
     AndroidDriver driver;
+
     public TrainServices(AndroidDriver driver) {
         super();
-        this.driver= driver;
+        this.driver = driver;
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
-    @AndroidFindBy(id = "(cris.org.in.prs.ima:id/tv_title_name")
+
+    @AndroidFindBy(accessibility = "I R CTC Rail Connect")
     private WebElement trainServiceScreen;
-    @AndroidFindBy(xpath = "(//android.widget.TextView)[@text= 'Book Ticket']")
+    @AndroidFindBy(xpath = "(//android.widget.ImageView)[2]")
     private WebElement bookTicketTab;
     @AndroidFindBy(xpath = "(//android.widget.TextView)[@text= 'My Bookings']")
     private WebElement myBookingsTab;
@@ -29,23 +34,54 @@ public class TrainServices {
     private WebElement cancelTicketTab;
     @AndroidFindBy(xpath = "(//android.widget.TextView)[@text= 'TRAIN SEARCH']")
     private WebElement searchTrainScreen;
-    @AndroidFindBy(xpath = "cris.org.in.prs.ima:id/fromStn_code")
+    @AndroidFindBy(xpath = "(//android.widget.TextView)[@text= 'STN' and @resource-id = 'cris.org.in.prs.ima:id/fromStn_code']")
     private WebElement stationFromPlaceholder;
-    @AndroidFindBy(xpath = "cris.org.in.prs.ima:id/toStn_code")
+    @AndroidFindBy(xpath = "(//android.widget.TextView)[@text= 'STN' and @resource-id = 'cris.org.in.prs.ima:id/toStn_code']")
     private WebElement stationToPlaceholder;
+    @AndroidFindBy(id = "cris.org.in.prs.ima:id/tv_search_text")
+    private WebElement stationFromSearchBar;
+    @AndroidFindBy(xpath = "//android.widget.TextView")
+    private List<WebElement> searchSuggestion;
+    @AndroidFindBy(id = "cris.org.in.prs.ima:id/fromStn_code")
+    private WebElement stationFromUserSelected;
+    @AndroidFindBy(id = "cris.org.in.prs.ima:id/toStn_code")
+    private WebElement stationToUserSelected;
 
-    public boolean isTrainServiceScreenVisible () {
-        return trainServiceScreen.isDisplayed();
+
+    public boolean isTrainServiceScreenVisible() {
+        if(trainServiceScreen.isDisplayed()){
+            return true;
+        }
+        return false;
     }
 
-    public void findTrains (){
-        if(isTrainServiceScreenVisible()== true){
-            bookTicketTab.click();
-            searchTrainScreen.isDisplayed();
-            System.out.println("Navigated to Search Train Screen");
 
 
+    public void findTrains(String fromStation, String toStation) throws InterruptedException {
+        bookTicketTab.click();
+        searchTrainScreen.isDisplayed();
+        System.out.println("Navigated to Search Train Screen");
+        stationFromPlaceholder.click();
+        stationFromSearchBar.click();
+        stationFromSearchBar.sendKeys(fromStation);
+        List<WebElement> searchSuggestions = driver.findElements(By.xpath("//android.widget.TextView[starts-with(@text," + fromStation + ")]"));
+        if (!searchSuggestions.isEmpty()) {
+            System.out.println(fromStation+" station found");
+            searchSuggestions.get(0).click(); // Assuming you want to click the first suggestion
+            Thread.sleep(2000);
+        } else {
+            System.out.println(fromStation+" station not found");
         }
+
+
+
+
+    }
+    public WebElement getUserSelectedStationFromName(){
+        return stationFromUserSelected;
+    }
+    public WebElement getUserSelectedStationToName(){
+        return stationToUserSelected;
     }
 }
 
