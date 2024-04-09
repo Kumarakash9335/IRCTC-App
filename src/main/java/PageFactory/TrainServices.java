@@ -40,6 +40,8 @@ public class TrainServices {
     private WebElement stationToPlaceholder;
     @AndroidFindBy(id = "cris.org.in.prs.ima:id/tv_search_text")
     private WebElement stationFromSearchBar;
+    @AndroidFindBy(xpath = "(//android.widget.EditText)[@text= 'Enter Destination city/station name or code']")
+    private WebElement stationToSearchBar;
     @AndroidFindBy(xpath = "//android.widget.TextView")
     private List<WebElement> searchSuggestion;
     @AndroidFindBy(id = "cris.org.in.prs.ima:id/fromStn_code")
@@ -64,16 +66,25 @@ public class TrainServices {
         stationFromPlaceholder.click();
         stationFromSearchBar.click();
         stationFromSearchBar.sendKeys(fromStation);
-        List<WebElement> searchSuggestions = driver.findElements(By.xpath("//android.widget.TextView[starts-with(@text," + fromStation + ")]"));
-        if (!searchSuggestions.isEmpty()) {
+        List<WebElement> searchSuggestionsForSource = driver.findElements(By.xpath("//android.widget.TextView[starts-with(@text," + fromStation + ")]"));
+        if (!searchSuggestionsForSource.isEmpty()) {
             System.out.println(fromStation+" station found");
-            searchSuggestions.get(0).click(); // Assuming you want to click the first suggestion
+            searchSuggestionsForSource.get(0).click(); // Assuming to click the first suggestion
             Thread.sleep(2000);
         } else {
             System.out.println(fromStation+" station not found");
         }
-
-
+        stationToPlaceholder.click();
+        stationToSearchBar.click();
+        stationToSearchBar.sendKeys(toStation);
+        List<WebElement> searchSuggestionsForDestination = driver.findElements(By.xpath("//android.widget.TextView[starts-with(@text," + toStation + ")]"));
+        if (!searchSuggestionsForDestination.isEmpty()) {
+            System.out.println(toStation+" station found");
+            searchSuggestionsForDestination.get(0).click(); // Assuming to click the first suggestion
+            Thread.sleep(2000);
+        } else {
+            System.out.println(toStation+" station not found");
+        }
 
 
     }
