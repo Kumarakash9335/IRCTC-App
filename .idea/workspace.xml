@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4df215c-4038-4a5c-b63e-17c8080b5fcd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageFactory/TrainServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageFactory/TrainServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageFactory/SearchTrainListTestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageFactory/SearchTrainListTestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PageFactory/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageFactory/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
     "Application.TestClass.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG./home/sc-234-user/IdeaProjects/IRCTC-App/testng.xml.executor": "Debug",
+    "TestNG./home/sc-234-user/IdeaProjects/IRCTC-App/testng.xml.executor": "Run",
     "TestNG.BaseTest.executor": "Run",
     "TestNG.BaseTest.startAppium.executor": "Run",
     "git-widget-placeholder": "search__train",
