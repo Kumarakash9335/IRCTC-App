@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4df215c-4038-4a5c-b63e-17c8080b5fcd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/DataFiles/TestData.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/PageFactory/TestClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/JsonConfigKeys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/JsonUtilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/PageFactory/SearchTrainListTestCases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageFactory/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageFactory/HomeScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PageFactory/TrainServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageFactory/TrainServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageFactory/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PageFactory/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PageFactory/SearchTrainList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/example/BaseTest.class" beforeDir="false" />
-    </list>
+    <list default="true" id="e4df215c-4038-4a5c-b63e-17c8080b5fcd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
